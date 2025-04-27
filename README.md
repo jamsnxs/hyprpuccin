@@ -15,6 +15,6 @@
 
 # About
 
-|> **Catppuccin Cartel ☕🐱**, a.k.a. the Frappe Mafia 
+> **Catppuccin Cartel ☕🐱**, a.k.a. the Frappe Mafia 
 
-This rice is meant to be quit simple but fancy stuffs on it. 
+This rice is meant to be quite simple but having fancy stuffs on it. 
