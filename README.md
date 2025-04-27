@@ -23,8 +23,6 @@
 ![frappe_nvim_code png](https://github.com/user-attachments/assets/cd4b3715-645c-4e44-a0e3-49ccf0339914)
 ![latte_nvim_code](https://github.com/user-attachments/assets/9c91d786-5600-4954-8065-3a4680b2d750)
 ![pokemons](https://github.com/user-attachments/assets/25f6d7e9-378b-4719-948d-724522d21dba)
-![tmux_frappe](https://github.com/user-attachments/assets/4e25a11e-e1d3-4eaf-b8d2-92e7a7f48a15)
-![tmux_latte](https://github.com/user-attachments/assets/7ea5e4b6-9e28-45d8-ad6b-2ebf325a10b7)
 
 # About
 
