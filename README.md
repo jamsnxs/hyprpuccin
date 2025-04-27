@@ -33,4 +33,15 @@ In Waybar, it updates the colors of the text, icons, and workspace indicators ac
 
 https://github.com/user-attachments/assets/637d5052-c9b2-4d57-97a1-f314ef2ff0d6
 
-# Installation
+# Usage
+
+Check hyprland.conf to see the binds:
+
+To execute the theme switch script:
+```ini
+bind = $mainMod, W, exec, theme_orchestrator  
+```
+To execute the sequencial wallpaper change script:
+```ini
+bind = $mainMod, M, exec, zsh -i -c nextwall # Sequencial Wallpapers 
+```

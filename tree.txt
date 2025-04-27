@@ -1,0 +1,235 @@
+.
+├── @assets
+├── .config
+│   ├── alacritty
+│   │   ├── alacritty.toml
+│   │   ├── catppuccin-frappe.toml
+│   │   └── catppuccin-latte.toml
+│   ├── btop
+│   │   ├── btop.conf
+│   │   └── themes
+│   │       ├── catppuccin_frappe.theme
+│   │       └── catppuccin_latte.theme
+│   ├── fastfetch
+│   │   ├── ascii
+│   │   │   ├── cat.txt
+│   │   │   ├── Charmander.txt
+│   │   │   ├── mewtwo.txt
+│   │   │   ├── riven00.txt
+│   │   │   └── sexy_misty.txt
+│   │   └── config.jsonc
+│   ├── hypr
+│   │   ├── hyprland.conf
+│   │   ├── .last_wallpaper_index
+│   │   └── scripts
+│   │       ├── autostart.sh
+│   │       ├── swww_sequential.sh
+│   │       └── theme_orchestrator
+│   ├── rofi
+│   │   ├── bluetooth
+│   │   │   ├── bluetooth.sh
+│   │   │   └── style.rasi
+│   │   ├── clipboard
+│   │   │   ├── clipboard.rasi
+│   │   │   ├── confirmation.rasi
+│   │   │   ├── launcher.sh
+│   │   │   └── style.rasi
+│   │   ├── config.rasi
+│   │   ├── launcher
+│   │   │   ├── launcher.sh
+│   │   │   └── style.rasi
+│   │   ├── powermenu
+│   │   │   ├── background.png
+│   │   │   ├── confirmation.rasi
+│   │   │   ├── powermenu.sh
+│   │   │   └── style.rasi
+│   │   ├── search
+│   │   │   ├── search.sh
+│   │   │   └── style.rasi
+│   │   └── wifi
+│   │       ├── enable.rasi
+│   │       ├── list.rasi
+│   │       ├── password.rasi
+│   │       ├── ssid.rasi
+│   │       └── wifi.sh
+│   ├── tmux
+│   │   ├── plugins
+│   │   │   ├── catppuccin
+│   │   │   ├── tmux-resurrect
+│   │   │   ├── tmux-sensible
+│   │   │   ├── tmux-yank
+│   │   │   └── tpm
+│   │   └── tmux.conf
+│   ├── waybar
+│   │   ├── config.jsonc
+│   │   └── style.css
+│   └── zathura
+│       ├── catppuccin-frappe
+│       ├── catppuccin-latte
+│       └── zathurarc
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   ├── exclude
+│   │   └── refs
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       └── remotes
+│   ├── objects
+│   │   ├── 04
+│   │   │   ├── 18cbbd9dc521e7a0289aa01229e8e26475fd53
+│   │   │   └── 6233eeabb36c5a35f590f0bbedd100e5a58dd4
+│   │   ├── 05
+│   │   │   ├── 2878f966518b62cbd56b3b6bdc8a3341ed4409
+│   │   │   └── 984adf46ae9eabd38d48b01bc277274fcec8ae
+│   │   ├── 0c
+│   │   │   └── abf83af289d1935b353a06c72d09751c879d06
+│   │   ├── 0d
+│   │   │   ├── 4e1a6402c17ed149fce50820b5acf94d26d170
+│   │   │   └── 8219e363269b72c06ab63aea2ad41c0af5aee7
+│   │   ├── 12
+│   │   │   └── b1fd0f0e47a7167943ce47f0406ce07d265374
+│   │   ├── 1e
+│   │   │   └── 65896189cc2ac77cc6d85cb2087d54ca1a3846
+│   │   ├── 22
+│   │   │   └── bef9710dd5c6bc9d4ce4bf2c7d680248cef4f9
+│   │   ├── 24
+│   │   │   └── 2e60449f7462ad7c48d580784eb0ea69e67bda
+│   │   ├── 25
+│   │   │   └── 9d9c701560f0360930c919859b35c80511cfd3
+│   │   ├── 32
+│   │   │   ├── 85cf4308bd5250f4d2aa86e92af04c7f8124bf
+│   │   │   └── ff4cfcc7c04db7476c43dea600ed1e75229b61
+│   │   ├── 37
+│   │   │   └── 507db52711d4904f19c9a95d4baa31faea2132
+│   │   ├── 39
+│   │   │   └── 96826717c6fcb0b6a15d88d499059a3e769bff
+│   │   ├── 3a
+│   │   │   └── 4abe97cac2cdf4b0a01519f3cd399350e853a5
+│   │   ├── 43
+│   │   │   └── 5d989d7f20184eaf9a2b99066a21cbcde1c74a
+│   │   ├── 4b
+│   │   │   └── b267637bcdb7f31177ecbb0dac030cb80ae1bb
+│   │   ├── 4c
+│   │   │   └── caf71aa68c811f09aa94093288b333c3078573
+│   │   ├── 53
+│   │   │   ├── e1bfdd8a64b7da46547f28c183ca1a0e682f11
+│   │   │   └── e4a1a4e9a0e77d17293c6b09c6a4e802ce7ce7
+│   │   ├── 56
+│   │   │   └── 54564b922412fb8aa1e82c0a6db75a8fa29d9c
+│   │   ├── 5e
+│   │   │   └── d386f296ec95766a692c6d2a2b170cdeb228b2
+│   │   ├── 61
+│   │   │   └── 5985cb2b4daeedc4c38da914ca6c2c47a9946d
+│   │   ├── 63
+│   │   │   └── 0926ece510aaa3472b82c3c266c84092881826
+│   │   ├── 67
+│   │   │   ├── 0ff7f73dbbedb89bde82cb0696f4fef0446d54
+│   │   │   └── ff01371adfd3f36eb9ce0abe92bd29a7fdadc8
+│   │   ├── 6a
+│   │   │   ├── bd504207c9913a238fc246c9e020e0e261fbe6
+│   │   │   ├── bd5674a616d154baefac7f111554b35c944433
+│   │   │   └── e6722c0d6e0541c4543aa2431c393e7af6bf8a
+│   │   ├── 73
+│   │   │   └── 75279aef10c73f638e10c9f3682e43ed2ab956
+│   │   ├── 75
+│   │   │   └── 1088bc4e5a62ea8656d668f36426348916143d
+│   │   ├── 78
+│   │   │   └── 4794f5a0260dd919d55e8cc2f7a65cd50ee754
+│   │   ├── 7f
+│   │   │   └── 503265551bd77dfc8d7f4389ba56066ca7086e
+│   │   ├── 81
+│   │   │   ├── 3314b2e4b69bb594fc87d5a80b0f0f314ac750
+│   │   │   └── 9ea9a3487752044f3630b1f65368086dd94d4e
+│   │   ├── 8c
+│   │   │   ├── 2ab01fae7e812655aa2f67d9e47791e890e439
+│   │   │   └── d515e0442b3d8d2b2b108b657997196500e295
+│   │   ├── 91
+│   │   │   └── b4fa37167acadf77151dc24ff0eb24c6632daf
+│   │   ├── 99
+│   │   │   └── e20d77adbebd9681ee7305e7eef79bfdc5033e
+│   │   ├── 9b
+│   │   │   └── baae84bfa84ae2229995679f7498daf9cb726b
+│   │   ├── 9d
+│   │   │   └── 8f40199ec5a643b898db809a97d5b2fc338bac
+│   │   ├── a9
+│   │   │   └── e62ab392e6412d23ff2d454747ec33ac024ed2
+│   │   ├── aa
+│   │   │   └── a244de4a31af8d00774cb49ba31955424f2367
+│   │   ├── b5
+│   │   │   └── 381e5a956eb5cc2c3f703fd253887a6beda781
+│   │   ├── c0
+│   │   │   └── 82243184b07f2ef709fedee0d1b9cf0155d308
+│   │   ├── c3
+│   │   │   └── f32cf5ab7577556cef7accee52051dacfdd21c
+│   │   ├── c4
+│   │   │   ├── 13fc58ee4692b20753f9b71d46e46039c3df31
+│   │   │   └── 772c707d8cfec2859772d93212f49a8d609e7c
+│   │   ├── cd
+│   │   │   └── 36440b46e264de3f569de4a8b198b32f636fdf
+│   │   ├── d9
+│   │   │   └── 14e175cc06a205478de1c998d20d0b606e60a5
+│   │   ├── df
+│   │   │   └── 1d44e8d3f0d96b99149b59f5a19a81e6131035
+│   │   ├── fc
+│   │   │   └── 9eea3df601383b59401a8e6874cd407c8ecad1
+│   │   ├── fd
+│   │   │   └── 7eddd6c6629aa2c5c2edf36aa0fa891bc5690b
+│   │   ├── ff
+│   │   │   └── 8b73d24ef0cb965dcd711e962023e4236c9a81
+│   │   ├── info
+│   │   │   ├── commit-graph
+│   │   │   └── packs
+│   │   └── pack
+│   │       ├── pack-41c0be37f172c8a7fdfa6391073561c19908415d.idx
+│   │       ├── pack-41c0be37f172c8a7fdfa6391073561c19908415d.pack
+│   │       └── pack-41c0be37f172c8a7fdfa6391073561c19908415d.rev
+│   ├── ORIG_HEAD
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       └── tags
+├── .gitmodules
+├── .local
+│   └── share
+│       ├── icons
+│       │   ├── Reversal-orange
+│       │   └── Reversal-orange-dark
+│       └── themes
+│           ├── Graphite-teal-Dark-nord
+│           └── Graphite-teal-Light-nord
+├── Pictures
+│   └── hyprland
+│       ├── dark.png
+│       ├── light.png
+│       ├── lol.jpg
+│       ├── riven003.jpg
+│       └── riven00.png
+├── README.md
+└── tree.txt
+
+96 directories, 137 files
