@@ -1,0 +1,55 @@
+* {
+    font: "JetBrainsMono Nerd Font 12";
+    background: #1e1e2e;
+    text-color: #cdd6f4;
+    selected-normal-background: #313244;
+    selected-normal-foreground: #f5c2e7;
+    border: 0;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: #1e1e2e;
+}
+
+window {
+    width: 400px;
+    location: center;
+    anchor: center;
+    background-color: #11111b;
+}
+
+mainbox {
+    orientation: vertical;
+    spacing: 2px;
+    children: [inputbar, listview];
+}
+
+inputbar {
+    children: [prompt, entry];
+    spacing: 10px;
+    padding: 5px;
+}
+
+listview {
+    lines: 6;
+    spacing: 5px;
+    scrollbar: false;
+    cycle: true;
+    dynamic: true;
+    fixed-height: true;
+    layout: vertical;
+    row-height: 30px;
+}
+
+element {
+    padding: 1px;
+    background-color: inherit;
+    text-color: inherit;
+    border-radius: 6px;
+}
+
+element selected {
+    background-color: #8caaee;
+    text-color: #f5c2e7;
+
+}

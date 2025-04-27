@@ -1,0 +1,38 @@
+[window]
+opacity = 0.8
+blur = true
+padding.x = 10
+padding.y = 10
+decorations = "none"
+decorations_theme_variant = "None"
+
+[font]
+size = 10.0
+normal = { family = "JetBrainsMonoNerdFont", style = "Regular" }
+bold = { family = "JetBrainsMonoNerdFont", style = "Bold" }
+italic = { family = "JetBrainsMonoNerdFont", style = "Italic" }
+bold_italic = { family = "JetBrainsMonoNerdFont", style = "Bold Italic" }
+
+[general]
+import = [
+  #"~/.config/alacritty/catppuccin-frappe.toml"
+   "~/.config/alacritty/catppuccin-frappe.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[scrolling]
+history = 1000
+multiplier = 8
+
+[cursor]
+style = { shape = "Block", blinking = "On"}
+vi_mode_style = { shape = "Block", blinking = "On"}
+blink_interval = 350
+thickness = 0.2
+
+[mouse]
+#bindings = [
+#  { mouse = "Right", mods = "Control", action = "Paste" },
+#]

@@ -1,0 +1,140 @@
+{
+    "layer": "top",
+    "height": 47,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "hyprland/workspaces",
+        "mpris",
+        "gamemode",
+        "privacy"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "power-profiles-daemon"
+    ],
+    "hyprland/workspaces": {
+        "format": "<span size='small' font='normal Font Awesome 6 Free'>{icon}</span>",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+        }
+    },
+    "mpris": {
+        "format": "{player_icon}  {title} - {artist}",
+        "format-paused": "{status_icon}  {title} - {artist}",
+        "max-length": 50,
+        "dynamic-len": 10,
+        // only the strings that match "spotify" will appear
+        "player": "spotify", 
+        "on-scroll-up": "playerctl --player=spotify volume 0.05+",
+        "on-scroll-down": "playerctl --player=spotify volume 0.05-",
+        "player-icons": {
+            "default": "󰎈",
+            "mpv": "",
+            "vlc": "<span color='#E85E00'>󰕼</span>",
+            "spotify": "<span color='#1DB954'></span>",
+            "brave": "<span font='normal Font Awesome 6 Free' color='#ed7009'></span>"
+        },
+        "status-icons": {
+            "paused": "⏸",
+            "playing": "",
+            "stopped": ""
+        }
+    },
+    "gamemode": {
+        "format": "{glyph}",
+        "format-alt": "{glyph} {count}",
+        "glyph": "",
+        "hide-not-running": true,
+        "use-icon": true,
+        "icon-name": "input-gaming-symbolic",
+        "icon-spacing": 4,
+        "icon-size": 20,
+        "tooltip": true,
+        "tooltip-format": "Games running: {count}"
+    },
+    "privacy": {
+        "icon-spacing": 4,
+        "icon-size": 12,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 12
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 12
+            }
+        ]
+    },
+    "clock": {
+        "interval": 1,
+        "format": " {:%d.%m.%Y | %H:%M}  ",
+        "tooltip": false,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+    "cpu": {
+        "interval": 30,
+        "format": " {load}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {used:0.1f} GB"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "󰖁 0% {format_source}",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "󰂑",
+            "headset": "󰂑",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ],
+        "format-source": " {volume}%",
+        "format-source-muted": " {volume}%"
+    }
+}

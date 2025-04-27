@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Graphite-teal-Dark-nord
+Comment=Um tema GTK customizado baseado no Graphite
+
+[X-GNOME-Metatheme]
+GtkTheme=Graphite-teal-Dark-nord
+IconTheme=Reversal-orange-dark
+CursorTheme=Bibata-Modern-Ice
