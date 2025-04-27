@@ -18,6 +18,9 @@
 > **Catppuccin Cartel ☕🐱**, a.k.a. the Frappe Mafia 
 
 This rice is designed to be simple yet stylish, featuring a custom script that switches the color scheme between Catppuccin Frappe and Latte for programs that don't support it natively.
+
+The rest of the system, controlled via `gsettings set org.gnome.desktop.interface color-scheme`, switches automatically between dark and light modes.
+
 The script currently handles:
 
 - Alacritty
@@ -37,7 +40,7 @@ https://github.com/user-attachments/assets/637d5052-c9b2-4d57-97a1-f314ef2ff0d6
 
 ## Hyprland
 
-Check hyprland.conf to see the binds:
+Check hyprland.conf for the keybindings.
 
 To execute the theme switch script:
 
@@ -45,22 +48,24 @@ To execute the theme switch script:
 bind = $mainMod, W, exec, theme_orchestrator  
 ```
 
-To execute the sequencial wallpaper change script:
+To execute the sequential wallpaper change script:
 
 ```ini
 bind = $mainMod, M, exec, zsh -i -c nextwall 
 ```
 
-Sequencial wallpaper script load all wallpaper in Pictures/hyprland dir, except for the dark.png and light.png images. 
+The sequential wallpaper script loads all wallpapers in the Pictures/hyprland directory, except for dark.png and light.png.
 
-Move scripts to .local/bin.
+Move the scripts to ~/.local/bin.
 
 ## Zsh
 
-To get the pokemons to launch in every time terminal opens, install **pokeget-rs**, and add `pokeget -s random --hide-name` to a custom_file.zsh in your **$ZSH**/custom folder
+To have Pokémon appear every time the terminal opens, install pokeget-rs, and add the following to a custom file.zsh in your $ZSH/custom folder:
 
-If using Powerlevel10k, edit .p10k.zsh and set Instant Prompt to quiet 
+If using Powerlevel10k, edit **.p10k.zsh** and set the Instant Prompt to quiet:
 
 ```bash
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet`
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 ```
+
+This will prevent the instant prompt message from showing when the Pokémon are displayed.
