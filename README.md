@@ -66,7 +66,7 @@ gsettings set org.gnome.desktop.interface icon-theme
 gsettings set org.gnome.desktop.interface color-scheme
 ```
 
-These commands change the GTK theme, icon theme, and color scheme to match the selected theme (either light or dark).
+These commands in the script change the GTK theme, icon theme, and color scheme to match the selected theme (either light or dark).
 
 ## Zsh
 
