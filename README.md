@@ -31,6 +31,6 @@ In Hyprland, the script also toggles the window border colors to match the Light
 
 In Waybar, it updates the colors of the text, icons, and workspace indicators accordingly.
 
-![Demo Video](https://github.com/user-attachments/assets/637d5052-c9b2-4d57-97a1-f314ef2ff0d6)
+https://github.com/user-attachments/assets/637d5052-c9b2-4d57-97a1-f314ef2ff0d6)
 
 # Installation
