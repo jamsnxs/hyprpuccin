@@ -16,7 +16,7 @@
 - **Wallpaper Daemon** - [swww](https://github.com/LGFae/swww)
 
 # Rice
-[demo]
+[demo](https://github.com/user-attachments/assets/b6638f16-ccc5-4726-9db4-cd06a4d33899)
 ![dark](https://github.com/user-attachments/assets/0d71effc-3da8-4328-9786-936e2cb5012f)
 ![light](https://github.com/user-attachments/assets/86e36a19-fe6a-47ee-9107-65b8535aa14c)
 ![frappe_random_wallpaper](https://github.com/user-attachments/assets/264fa2e0-7116-436a-9674-bbf689d10cbd)
