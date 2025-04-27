@@ -6,11 +6,11 @@
 - **Term** - [Alacritty](https://github.com/alacritty/alacritty)
 - **Compositor** - [Hyprland](https://hyprland.org/)
 - **Prompt** - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
-- **App Launcher** - [Rofi]([GitHub - davatorium/rofi: Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi))
-- **Notification daemon** - [mako]([GitHub - emersion/mako: A lightweight Wayland notification daemon](https://github.com/emersion/mako))
+- **App Launcher** - [Rofi](https://github.com/davatorium/rofi)
+- **Notification daemon** - [mako](https://github.com/emersion/mako)
 - **Bar** - [Waybar]([GitHub - Alexays/Waybar: Highly customizable Wayland bar for Sway and Wlroots based compositors. :tada:](https://github.com/Alexays/Waybar))
 - **Color Scheme** - [Catppuccin Frappe / Latte]([Catppuccin · GitHub](https://github.com/catppuccin))
-- **System Theme** - [Graphite-teal-nord]([Graphite multicolor mode - pling.com](https://www.pling.com/p/2014493/))
+- **System Theme** - [Graphite-teal-nord](https://www.pling.com/p/2014493/)
 - **Icon Theme** - [Reversal-orange](https://www.gnome-look.org/p/1340791)
 
 # About
