@@ -54,9 +54,31 @@ bind = $mainMod, M, exec, zsh -i -c nextwall
 
 The sequential wallpaper script loads all wallpapers in the Pictures/hyprland directory, except for dark.png and light.png.
 
-Move the scripts to ~/.local/bin.
+Move the theme and wallpaper scripts to ~/.local/bin.
 
 > **Note:** The scripts do not require GNOME or GDM to be active or running. They will work independently of these services.
+
+### Rofi Launcher
+
+To use the app launcher:
+
+```ini
+bind = $mainMod, Space, exec, ~/.config/rofi/launcher/launcher.sh 
+```
+
+To use the bluetooth launcher:
+
+```ini
+ bind = $mainMod, X, exec, ~/.config/rofi/bluetooth/bluetooth.sh 
+```
+
+To use the clipboard:
+
+```ini
+bind = $mainmod, z, exec, ~/.config/rofi/clipboard/launcher.sh
+```
+
+> There are other modules in .config/rofi that I don't use, but they are also good.
 
 ## GNOME Settings
 
@@ -79,3 +101,13 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 ```
 
 This will prevent the instant prompt message from showing when the Pokémon are displayed.
+
+## Extra
+
+- [Zathura](https://github.com/pwmt/zathura)
+
+- [Tmux](https://github.com/tmux)
+
+- [Btop](https://github.com/aristocratos/btop)
+
+- [poke-get-rs](https://github.com/talwat/pokeget-rs)
