@@ -10,6 +10,8 @@
 - **Notification daemon** - mako
 - **Bar** - Waybar
 - **Color Scheme** - Catppuccin Frappe / Latte
+- **System Theme** - Graphite-teal-nord
+- **Icon Theme** - Reversal-orange
 
 # About
 
