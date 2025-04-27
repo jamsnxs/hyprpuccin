@@ -9,4 +9,4 @@
 - **App Launcher** - Rofi
 - **Notification daemon** - mako
 - **Bar** - Waybar
-- **Color Scheme** - Cattpuccin Frappe / Latte
+- **Color Scheme** - Catppuccin Frappe / Latte
