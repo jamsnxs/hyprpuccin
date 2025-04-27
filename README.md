@@ -43,5 +43,6 @@ bind = $mainMod, W, exec, theme_orchestrator
 ```
 To execute the sequencial wallpaper change script:
 ```ini
-bind = $mainMod, M, exec, zsh -i -c nextwall # Sequencial Wallpapers 
+bind = $mainMod, M, exec, zsh -i -c nextwall 
 ```
+Move scripts to .local/bin.
