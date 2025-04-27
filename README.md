@@ -19,7 +19,7 @@
 
 This rice is designed to be simple yet stylish, featuring a custom script that switches the color scheme between Catppuccin Frappe and Latte for programs that don't support it natively. The rest of the system, controlled via `gsettings set org.gnome.desktop.interface color-scheme`, switches automatically between dark and light modes.
 
-The script currently handles:
+The script currently handles this programs:
 
 - Alacritty
 - Tmux
@@ -55,6 +55,18 @@ bind = $mainMod, M, exec, zsh -i -c nextwall
 The sequential wallpaper script loads all wallpapers in the Pictures/hyprland directory, except for dark.png and light.png.
 
 Move the scripts to ~/.local/bin.
+
+> **Note:** The scripts do not require GNOME or GDM to be active or running. They will work independently of these services.
+
+## GNOME Settings
+
+```bash
+gsettings set org.gnome.desktop.interface gtk-theme 
+gsettings set org.gnome.desktop.interface icon-theme
+gsettings set org.gnome.desktop.interface color-scheme
+```
+
+These commands change the GTK theme, icon theme, and color scheme to match the selected theme (either light or dark).
 
 ## Zsh
 
