@@ -10,3 +10,9 @@
 - **Notification daemon** - mako
 - **Bar** - Waybar
 - **Color Scheme** - Catppuccin Frappe / Latte
+
+# About
+
+|> **Catppuccin Cartel ☕🐱**, a.k.a. the Frappe Mafia 
+
+This rice is meant to be quit simple but fancy stuffs on it. 
