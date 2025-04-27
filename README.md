@@ -35,14 +35,32 @@ https://github.com/user-attachments/assets/637d5052-c9b2-4d57-97a1-f314ef2ff0d6
 
 # Usage
 
+## Hyprland
+
 Check hyprland.conf to see the binds:
 
 To execute the theme switch script:
+
 ```ini
 bind = $mainMod, W, exec, theme_orchestrator  
 ```
+
 To execute the sequencial wallpaper change script:
+
 ```ini
 bind = $mainMod, M, exec, zsh -i -c nextwall 
 ```
+
+Sequencial wallpaper script load all wallpaper in Pictures/hyprland dir, except for the dark.png and light.png images. 
+
 Move scripts to .local/bin.
+
+## Zsh
+
+To get the pokemons to launch in every time terminal opens, install **pokeget-rs**, and add `pokeget -s random --hide-name` to a custom_file.zsh in your **$ZSH**/custom folder
+
+If using Powerlevel10k, edit .p10k.zsh and set Instant Prompt to quiet 
+
+```bash
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet`
+```
