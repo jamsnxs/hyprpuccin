@@ -30,3 +30,7 @@ For Neovim and VS Code, the transition happens automatically on the fly — you 
 In Hyprland, the script also toggles the window border colors to match the Light and Dark variants.
 
 In Waybar, it updates the colors of the text, icons, and workspace indicators accordingly.
+
+![demo](@assets/border_and_waybar.GIF)
+
+# Installation
