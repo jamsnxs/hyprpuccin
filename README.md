@@ -17,4 +17,16 @@
 
 > **Catppuccin Cartel ☕🐱**, a.k.a. the Frappe Mafia 
 
-This rice is meant to be quite simple but having fancy stuffs on it. 
+This rice is designed to be simple yet stylish, featuring a custom script that switches the color scheme between Catppuccin Frappe and Latte for programs that don't support it natively.
+The script currently handles:
+
+- Alacritty
+- Tmux
+- Btop
+- Zathura
+
+For Neovim and VS Code, the transition happens automatically on the fly — you just need to set Catppuccin Latte as the Light theme and Frappe as the Dark theme.
+
+In Hyprland, the script also toggles the window border colors to match the Light and Dark variants.
+
+In Waybar, it updates the colors of the text, icons, and workspace indicators accordingly.
