@@ -12,6 +12,7 @@
 - **Color Scheme** - [Catppuccin Frappe / Latte](https://github.com/catppuccin)
 - **System Theme** - [Graphite-teal-nord](https://www.pling.com/p/2014493/)
 - **Icon Theme** - [Reversal-orange](https://www.gnome-look.org/p/1340791)
+- **Wallpaper Daemon** - [swww](https://github.com/LGFae/swww)
 
 # About
 
@@ -103,7 +104,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 This will prevent the instant prompt message from showing when the Pokémon are displayed.
 
 ## Extra
-
+- Clipboard - [cliphist](https://github.com/sentriz/cliphist) / [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - [Zathura](https://github.com/pwmt/zathura)
 
 - [Tmux](https://github.com/tmux)
