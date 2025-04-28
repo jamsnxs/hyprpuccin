@@ -116,6 +116,7 @@ This will prevent the instant prompt message from showing when the Pokémon are 
 ## Extra
 - Clipboard - [cliphist](https://github.com/sentriz/cliphist) / [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - Fetch - [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+- Audio Visualizer - [cava](https://github.com/karlstav/cava)
 - [Zathura](https://github.com/pwmt/zathura)
 - [Tmux](https://github.com/tmux)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
