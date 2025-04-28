@@ -1,7 +1,6 @@
 # Features of config
 
 - **OS** - [Fedora](https://fedoraproject.org/workstation/download)
-- **WM** - Hypr
 - **Compositor** - [Hyprland](https://hyprland.org/)
 - **Shell** - Zsh
 - **Zsh Framework** - [Oh My Zsg](https://ohmyz.sh/)
