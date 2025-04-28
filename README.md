@@ -1,7 +1,7 @@
 # Features of config
 
 - **OS** - [Fedora](https://fedoraproject.org/workstation/download)
-- **Compositor** - [Hyprland](https://hyprland.org/)
+- **Compositor/WM** - [Hyprland](https://hyprland.org/)
 - **Shell** - Zsh
 - **Zsh Framework** - [Oh My Zsg](https://ohmyz.sh/)
 - **Prompt** - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
