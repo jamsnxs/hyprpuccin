@@ -3,7 +3,7 @@
 - **OS** - [Fedora](https://fedoraproject.org/workstation/download)
 - **Compositor/WM** - [Hyprland](https://hyprland.org/)
 - **Shell** - Zsh
-- **Zsh Framework** - [Oh My Zsg](https://ohmyz.sh/)
+- **Zsh Framework** - [Oh My Zsh](https://ohmyz.sh/)
 - **Prompt** - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - **Term** - [Alacritty](https://github.com/alacritty/alacritty)
 - **App Launcher** - [Rofi](https://github.com/davatorium/rofi)
