@@ -102,7 +102,7 @@ These commands in the script change the GTK theme, icon theme, and color scheme 
 
 ## Zsh
 
-To have Pokémon appear every time the terminal opens, install pokeget-rs, and add the following to a custom file.zsh in your $ZSH/custom folder:
+To have Pokémons appear every time the terminal opens, install pokeget-rs, and add the following to a custom file.zsh in your $ZSH/custom folder:
 
 If using Powerlevel10k, edit **.p10k.zsh** and set the Instant Prompt to quiet:
 
