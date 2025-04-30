@@ -15,9 +15,7 @@
 - **Wallpaper Daemon** - [swww](https://github.com/LGFae/swww)
 
 # Rice
-
-https://github.com/user-attachments/assets/b6638f16-ccc5-4726-9db4-cd06a4d33899
-
+https://github.com/user-attachments/assets/8a3fc6f4-5d1f-4356-8cbb-eb8513fc083c
 ![dark](https://github.com/user-attachments/assets/0d71effc-3da8-4328-9786-936e2cb5012f)
 ![light](https://github.com/user-attachments/assets/86e36a19-fe6a-47ee-9107-65b8535aa14c)
 ![frappe_nvim_code png](https://github.com/user-attachments/assets/cd4b3715-645c-4e44-a0e3-49ccf0339914)
