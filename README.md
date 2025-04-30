@@ -15,7 +15,8 @@
 - **Wallpaper Daemon** - [swww](https://github.com/LGFae/swww)
 
 # Rice
-[![Watch the video](https://raw.githubusercontent.com/jamsnxs/hyprpuccin/main/@assets/thumb.png)](https://raw.githubusercontent.com/jamsnxs/hyprpuccin/main/@assets/demo_reel.mp4)
+
+https://github.com/user-attachments/assets/d985aeeb-b1e8-490b-b240-98ab732fab2d
 
 ![dark](https://github.com/user-attachments/assets/0d71effc-3da8-4328-9786-936e2cb5012f)
 ![light](https://github.com/user-attachments/assets/86e36a19-fe6a-47ee-9107-65b8535aa14c)
