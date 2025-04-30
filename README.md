@@ -73,19 +73,19 @@ Move the theme and wallpaper scripts to ~/.local/bin.
 To use the app launcher:
 
 ```ini
-bind = $mainMod, Space, exec, ~/.config/rofi/launcher/launcher.sh 
+bind = $mainMod, Space, exec, $rofi_path/rofi/launcher/launcher.sh 
 ```
 
 To use the bluetooth launcher:
 
 ```ini
- bind = $mainMod, X, exec, ~/.config/rofi/bluetooth/bluetooth.sh 
+ bind = $mainMod, X, exec, $rofi_path/bluetooth/bluetooth.sh 
 ```
 
 To use the clipboard:
 
 ```ini
-bind = $mainmod, z, exec, ~/.config/rofi/clipboard/launcher.sh
+bind = $mainmod, z, exec, $rofi_path/clipboard/launcher.sh
 ```
 
 > There are other modules in .config/rofi that I don't use, but they are also good.
