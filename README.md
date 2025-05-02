@@ -121,6 +121,7 @@ This will prevent the instant prompt message from showing when the Pokémon are 
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 - [Btop](https://github.com/aristocratos/btop)
 - [poke-get-rs](https://github.com/talwat/pokeget-rs)
+- [hyprshade](https://github.com/loqusion/hyprshade)
 
 ```
 #        ██╗ █████╗ ███╗   ███╗███████╗███╗   ██╗██╗  ██╗███████╗ 

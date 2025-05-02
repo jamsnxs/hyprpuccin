@@ -1,0 +1,22 @@
+#!/bin/bash
+
+HOUR=$(date +%H)
+MIN=$(date +%M)
+
+TIME="${HOUR}:${MIN}"
+
+case "$TIME" in
+  "21:30")
+    ddcutil setvcp 10 15
+    hyprshade toggle blue-light-filter
+    ;;
+  "22:30")
+    ddcutil setvcp 10 1
+    hyprshade toggle grayscale
+    ;;
+  "06:00")
+    ddcutil setvcp 10 30
+    hyprshade off
+    ;;
+esac
+
