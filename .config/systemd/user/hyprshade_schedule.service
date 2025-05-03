@@ -1,0 +1,7 @@
+[Unit]
+Description=Hyprshade scheduler
+
+[Service]
+ExecStart=/home/jamsnxs/.local/bin/hyprshade_schedule
+Type=oneshot
+

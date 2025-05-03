@@ -1,0 +1,13 @@
+[Unit]
+Description=Zen Browser
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+ExecStart=/home/jamsnxs/AppImages/zen_browser.appimage
+#Restart=on-failure
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

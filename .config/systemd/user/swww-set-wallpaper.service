@@ -1,0 +1,11 @@
+[Unit]
+Description=Set SWWW Wallpaper
+After=swww-daemon.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/jamsnxs/.local/bin/swww restore
+Slice=background-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

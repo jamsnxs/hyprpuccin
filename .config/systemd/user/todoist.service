@@ -1,0 +1,13 @@
+[Unit]
+Description=Todoist 
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+ExecStart=flatpak run com.todoist.Todoist
+Restart=on-failure
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

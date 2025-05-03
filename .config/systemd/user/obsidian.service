@@ -1,0 +1,13 @@
+[Unit]
+Description=Obsidian
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/jamsnxs/AppImages/obsidian.appimage
+WorkingDirectory=%h
+Restart=on-failure
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

@@ -9,7 +9,9 @@
 │   ├── fastfetch
 │   │   └── ascii
 │   ├── hypr
-│   │   └── scripts
+│   │   ├── scripts
+│   │   │   └── backup
+│   │   └── shaders
 │   ├── rofi
 │   │   ├── bluetooth
 │   │   ├── clipboard
@@ -17,6 +19,11 @@
 │   │   ├── powermenu
 │   │   ├── search
 │   │   └── wifi
+│   ├── systemd
+│   │   └── user
+│   │       ├── default.target.wants
+│   │       ├── graphical-session.target.wants
+│   │       └── timers.target.wants
 │   ├── tmux
 │   │   └── plugins
 │   │       ├── catppuccin
@@ -24,6 +31,7 @@
 │   │       ├── tmux-sensible
 │   │       ├── tmux-yank
 │   │       └── tpm
+│   ├── uwsm
 │   ├── waybar
 │   └── zathura
 ├── .fonts
@@ -38,5 +46,6 @@
 │           └── Graphite-teal-Light-nord
 └── Pictures
     └── hyprland
+        └── Gold
 
-40 directories
+49 directories

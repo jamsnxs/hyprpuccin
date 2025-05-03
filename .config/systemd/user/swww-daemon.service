@@ -1,0 +1,14 @@
+[Unit]
+Description=SWWW Wallpaper Daemon
+Documentation=man:swww(1)
+After=graphical-session.target
+
+[Service]
+Type=exec
+ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "Hyprland" ""
+ExecStart=/home/jamsnxs/.local/bin/swww-daemon
+Restart=on-failure
+Slice=background-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target
