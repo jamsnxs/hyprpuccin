@@ -4,9 +4,10 @@ Documentation=man:swww(1)
 After=graphical-session.target
 
 [Service]
-Type=exec
+Type=simple
 ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "Hyprland" ""
 ExecStart=/home/jamsnxs/.local/bin/swww-daemon
+ExecStartPost=/home/jamsnxs/.local/bin/swww restore
 Restart=on-failure
 Slice=background-graphical.slice
 

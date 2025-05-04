@@ -1,0 +1,16 @@
+#!/bin/bash
+
+case "$1" in
+night)
+  ddcutil setvcp 10 15
+  hyprshade toggle blue-light-filter
+  ;;
+late)
+  ddcutil setvcp 10 1
+  hyprshade toggle grayscale
+  ;;
+morning)
+  ddcutil setvcp 10 30
+  hyprshade off
+  ;;
+esac

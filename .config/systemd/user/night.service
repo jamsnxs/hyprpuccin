@@ -1,0 +1,13 @@
+[Unit]
+Description=Set night mode
+After=graphical.target
+
+[Service]
+Type=oneshot
+Environment="PATH=/home/jamsnxs/.local/share/pipx/venvs/hyprshade/bin:/usr/local/bin:/usr/bin:/bin:/home/jamsnxs/.local/bin"
+ExecStart=/home/jamsnxs/.local/bin/sleep_filter night
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+
