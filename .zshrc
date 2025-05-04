@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
+export PATH="$HOME/.cargo/bin:$PATH"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -41,7 +41,6 @@ export ARCHFLAGS="-arch $(uname -m)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Environment
-export PATH="$HOME/.cargo/bin:$PATH"
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
 export PATH=:"/opt/pycharm-community-2024.3.5/bin:$PATH"
 export PATH=$PATH:/home/jamsnxs/.spicetify
