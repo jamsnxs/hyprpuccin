@@ -1,0 +1,10 @@
+[[shades]]
+name = "blue-light-filter"
+end_time = 21:59:00   
+
+[[shades]]
+name = "grayscale"
+start_time = 22:00:00
+end_time = 06:00:00   
+
+
