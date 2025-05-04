@@ -1,3 +1,11 @@
+#        ██╗ █████╗ ███╗   ███╗███████╗███╗   ██╗██╗  ██╗███████╗ 
+#        ██║██╔══██╗████╗ ████║██╔════╝████╗  ██║╚██╗██╔╝██╔════╝
+#        ██║███████║██╔████╔██║███████╗██╔██╗ ██║ ╚███╔╝ ███████╗
+#   ██   ██║██╔══██║██║╚██╔╝██║╚════██║██║╚██╗██║ ██╔██╗ ╚════██║
+#   ╚█████╔╝██║  ██║██║ ╚═╝ ██║███████║██║ ╚████║██╔╝ ██╗███████║
+#    ╚════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+
+
 ### MONITORS ###
 # See https://wiki.hyprland.org/Configuring/Monitors/
 monitor = DP-2, 1920x1080@120, 0x0, 1 # Default: monitor = preferred,auto,auto
@@ -9,15 +17,37 @@ $terminal = alacritty
 $fileManager = thunar
 $taskManagerCmd = alacritty -e btop
 $rofi_path = ~/.config/rofi
-$hyprsh = ~/.config/hypr/scripts/
+$hyprsh = ~/.config/hypr/scripts
 
 ### AUTOSTART ###
-exec-once = uwsm app -- dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec-once = uwsm app -- dbus-update-activation-environment --systemd HYPRLAND_INSTANCE_SIGNATURE
-exec-once = uwsm app -- wl-paste --watch cliphist store # Clipboard Manager
-exec-once = uwsm app -- mako
-exec-once = uwsm app -- hypridle
-exec = uwsm app -- hyprshade auto
+exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec-once = systemctl --user start hyprpolkitagent 
+exec-once = dbus-update-activation-environment --systemd HYPRLAND_INSTANCE_SIGNATURE
+exec-once = mako 
+exec-once = waybar 
+exec-once = $hyprsh/autostart.sh # To load the daemon that starts swww
+exec-once = hypridle
+exec-once = wl-paste --watch cliphist store  # Clipboard Manager
+# USER APPS
+exec-once = [workspace 1 silent] zen
+exec-once = [workspace special:magic silent] obsidian.appimage
+exec = hyprshade auto
+
+### ENVIRONMENT VARIABLES ###
+# See https://wiki.hyprland.org/Configuring/Environment-variables/
+# SCALING AND COMPATIBILITY VARIABLES
+env = gdk_backend,wayland,x11,* 
+env = sdl_videodriver,wayland 
+env = clutter_backend,wayland 
+env = ozone_platform,wayland 
+env = moz_enable_wayland,1 
+env = xdg_current_desktop,hyprland
+env = xdg_session_type,wayland
+env = xdg_session_desktop,hyprland
+env = qt_qpa_platform,wayland;xcb 
+env = qt_auto_screen_scale_factor,1  
+env = qt_wayland_disable_windowdecoration,1
+env = qt_qpa_platformtheme,qt5ct
 
 ### LOOK AND FEEL ###
 # https://wiki.hyprland.org/Configuring/Variables/#general
@@ -66,7 +96,7 @@ animations {
     animation = borderangle, 1, $speed, default
     animation = fade, 1, $speed, default
     animation = workspaces, 1, $speed, default
-    animation = specialWorkspace, 1, $speed, default, $slide
+    animation = specialWorkspace, 1, $speed, default, $slide 
 }
 
 # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
@@ -75,15 +105,15 @@ dwindle {
     preserve_split = true # You probably want this
 }
 
-# See https://wiki.hyprland.org/configuring/master-layout/ for more
+# See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
 master {
     new_status = master
 }
 
 # https://wiki.hyprland.org/Configuring/Variables/#misc
 misc {
-    force_default_wallpaper = 0 # Set to 0 or 1 to disable the anime mascot wallpapers
-    disable_hyprland_logo = true # If true disables the random hyprland logo / anime girl background. :(
+    force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
+    disable_hyprland_logo = false # If true disables the random hyprland logo / anime girl background. :(
     vfr = true # Variable frame rate, true to better perfomance
     vrr = 1 # Adaptative sync
 }
@@ -93,17 +123,17 @@ misc {
 input {
     kb_layout = br
     follow_mouse = 1
-    kb_options = # caps:none Disable caps-lock key
+    kb_options = caps:none # Disable caps-lock key
     sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
 }
 
 ### KEYBINDINGS ###
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 $mainMod = SUPER # Sets super key as main modifier
-bind = $mainMod, F2, exec, uwsm stop 
-bind = $mainMod, Q, exec, uwsm app -- $terminal
+bind = $mainMod, F8, exit
+bind = $mainMod, Q, exec, $terminal
 bind = $mainMod, C, killactive,
-bind = $mainMod, E, exec, uwsm app -- $fileManager
+bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, V, togglefloating,
 bind = $mainMod, P, togglesplit, # dwindle
 bind = $mainMod, A, pseudo, # dwindle
@@ -114,24 +144,29 @@ bind = $mainMod, down, swapwindow, d # down
 
 # Extra binds
     bind = $mainMod, F, fullscreen
-
+    
     # Hyprshot @jamsnxs
-    bind = $mainMod, u, exec, uwsm app -- hyprshot -m window
-    bind = $mainMod, I, exec, uwsm app -- hyprshot -m region --clipboard
-    bind = $mainMod, O, exec, uwsm app -- hyprshot -m output
+    bind = $mainMod, u, exec, hyprshot -m window 
+    bind = $mainMod, I, exec, hyprshot -m region --clipboard
+    bind = $mainMod, O, exec, hyprshot -m output
 
     # SWWW Extra Wallpapers @jamsnxs
-    bind = $mainMod, M, exec, uwsm app -- zsh -i -c nextwall # Sequencial Wallpapers
-    bind = $mainMod, N, exec, uwsm app -- zsh -i -c gold_wall # Best Wallpapers
-    bind = $mainMod, W, exec, uwsm app -- zsh -i -c theme_orchestrator
+    bind = $mainMod, M, exec, zsh -i -c nextwall # Sequencial Wallpapers 
+    bind = $mainMod, N, exec, zsh -i -c gold_wall # Best Wallpapers 
+    bind = $mainMod, W, exec, theme_orchestrator  
+
+    # Hyprsunset @jamsnxs
+    bind = $mainMod, T, exec, hyprsunset -t 1700 # Strong shade
+    bind = $mainMod, G, exec, hyprsunset -t 3000 # Light shade
+    bind = $mainMod, Y, exec, hyprsunset -i # Reset to default
 
     # Btop @jamsnxs
-    bind = $mainMod, B, exec, uwsm app -- $taskManagerCmd
+    bind = $mainMod, B, exec, $taskManagerCmd
 
     # Rofi Launcher @jamsnxs
-    bind = $mainMod, Space, exec, uwsm app -- $rofi_path/launcher/launcher.sh
-    bind = $mainMod, X, exec, uwsm app -- $rofi_path/bluetooth/bluetooth.sh
-    bind = $mainMod, Z, exec, uwsm app -- $rofi_path/clipboard/launcher.sh
+    bind = $mainMod, Space, exec, $rofi_path/launcher/launcher.sh 
+    bind = $mainMod, X, exec, $rofi_path/bluetooth/bluetooth.sh 
+    bind = $mainMod, Z, exec, $rofi_path/clipboard/launcher.sh
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, l, movefocus, l
@@ -166,9 +201,15 @@ bindm = $mainMod, mouse:272, movewindow
 bindm = $mainMod, mouse:273, resizewindow
 
 # Laptop multimedia keys for volume and LCD brightness
-bindel = ,XF86AudioRaiseVolume, exec, uwsm app -- $hyprsh/volume_lock
-bindel = ,XF86AudioLowerVolume, exec, uwsm app -- wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
-bindel = ,XF86AudioMute, exec, uwsm app -- wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindel = ,XF86AudioRaiseVolume, exec, $hyprsh/volume_lock
+bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindel = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+# Requires playerctl
+bindl = ,XF86AudioNext, exec, playerctl next
+bindl = ,XF86AudioPause, exec, playerctl play-pause
+bindl = ,XF86AudioPlay, exec, playerctl play-pause
+bindl = ,XF86AudioPrev, exec, playerctl previous
 
 ### WINDOWS AND WORKSPACES ###
 # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
@@ -177,10 +218,8 @@ windowrulev2 = float, class:io.github.nokse22.minitex
 windowrulev2 = float, class:org.gnome.Calculator
 
 windowrulev2 = opacity 0.9 0.8,class:Todoist
+windowrulev2 = opacity 0.9 0.7,class:Code
 
 windowrulev2 = suppressevent maximize, class:.* # Ignore maximize requests from apps
-# Fix some dragging issues with XWayland
+#Fix some dragging issues with XWayland
 windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0 
-windowrule = workspace 1 silent, class:zen
-windowrule = workspace special:magic silent, class:obsidian
-
