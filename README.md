@@ -13,6 +13,7 @@
 - **System Theme** - [Graphite-teal-nord](https://www.pling.com/p/2014493/)
 - **Icon Theme** - [Reversal-orange](https://www.gnome-look.org/p/1340791)
 - **Wallpaper Daemon** - [swww](https://github.com/LGFae/swww)
+- **Session Manager** - [uwsm](https://github.com/Vladimir-csp/uwsm)
 
 # Rice
 
@@ -113,15 +114,17 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 This will prevent the instant prompt message from showing when the Pokémon are displayed.
 
 ## Extra
-- Clipboard - [cliphist](https://github.com/sentriz/cliphist) / [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
-- Fetch - [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
-- Audio Visualizer - [cava](https://github.com/karlstav/cava)
+- **Clipboard** - [cliphist](https://github.com/sentriz/cliphist) / [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
+- **Fetch** - [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+- **Audio Visualizer** - [cava](https://github.com/karlstav/cava)
+- **Idle Daemon** - [hypridle](https://github.com/hyprwm/hypridle)
 - [Zathura](https://github.com/pwmt/zathura)
 - [Tmux](https://github.com/tmux)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 - [Btop](https://github.com/aristocratos/btop)
 - [poke-get-rs](https://github.com/talwat/pokeget-rs)
 - [hyprshade](https://github.com/loqusion/hyprshade)
+
 
 ```
 #        ██╗ █████╗ ███╗   ███╗███████╗███╗   ██╗██╗  ██╗███████╗ 
