@@ -2,13 +2,14 @@
 Description=Hyprland PolicyKit Authentication Agent
 PartOf=graphical-session.target
 After=graphical-session.target
-ConditionEnvironment=wayland_display
+#ConditionEnvironment=wayland_display
 
 [Service]
 ExecStart=/usr/libexec/hyprpolkitagent
 Restart=on-failure
 TimeoutStopSec=5sec
 Slice=app-graphical.slice
+Environment=WAYLAND_DISPLAY=wayland-1
 
 [Install]
 WantedBy=graphical-session.target
