@@ -3,10 +3,13 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_BACKEND=wayland,x11,*
-export SDL_VIDEODRIVER=wayland
+export SDL_VIDEODRIVER=wayland,x11
 export CLUTTER_BACKEND=wayland
 export OZONE_PLATFORM=wayland
 export MOZ_ENABLE_WAYLAND=1
 export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=Hyprland
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+
+
