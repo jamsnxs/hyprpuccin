@@ -11,5 +11,6 @@ export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=Hyprland
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+export OBS_PORTAL=1
 
 
