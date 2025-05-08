@@ -1,0 +1,8 @@
+[Unit]
+Description=Shutdown the system in 23:00 PM
+
+[Service]
+ExecStart=/home/jamsnxs/.local/bin/sleep_shutdown
+Type=oneshot
+RemainAfterExit=true
+

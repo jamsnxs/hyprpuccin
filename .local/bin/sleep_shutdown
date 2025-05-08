@@ -1,0 +1,10 @@
+#!/bin/bash
+
+notify-send "Warning!" "System will shutdown in 35 seconds."
+
+# Wait for 35 seconds
+sleep 35
+
+# Shutdown the system
+shutdown now
+

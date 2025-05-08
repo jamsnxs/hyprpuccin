@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to shutdown system at 23:00
+
+[Timer]
+OnCalendar=*-*-* 23:00:00
+Unit=sleep_shutdown.service
+
+[Install]
+WantedBy=timers.target
+
