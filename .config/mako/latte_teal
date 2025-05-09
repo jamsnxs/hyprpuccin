@@ -1,0 +1,10 @@
+# Colors
+# Lattle Applied
+
+background-color=#eff1f5
+text-color=#4c4f69
+border-color=#179299
+progress-color=over #ccd0da
+
+[urgency=high]
+border-color=#fe640b
